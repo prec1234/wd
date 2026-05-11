@@ -1,0 +1,21 @@
+<?php
+
+$str = "Computer Engineering";
+
+echo "<h2>String Manipulation</h2>";
+
+echo "Original String : " . $str;
+
+echo "<br><br>";
+
+echo "String Length : " . strlen($str);
+
+echo "<br><br>";
+
+echo "Reverse String : " . strrev($str);
+
+echo "<br><br>";
+
+echo "Substring : " . substr($str, 0, 8);
+
+?>
