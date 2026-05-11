@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Calculator</title>
+</head>
+<body>
+
+    <h1>Simple Calculator</h1>
+
+    <script>
+
+        function calculator(a, b, choice)
+        {
+            switch(choice)
+            {
+                case '+':
+                    document.write("Addition = " + (a + b));
+                    break;
+
+                case '-':
+                    document.write("Subtraction = " + (a - b));
+                    break;
+
+                case '*':
+                    document.write("Multiplication = " + (a * b));
+                    break;
+
+                case '/':
+                    document.write("Division = " + (a / b));
+                    break;
+
+                default:
+                    document.write("Invalid Choice");
+            }
+        }
+
+        var num1 = parseInt(prompt("Enter First Number"));
+        var num2 = parseInt(prompt("Enter Second Number"));
+        var op = prompt("Enter Operator (+, -, *, /)");
+
+        calculator(num1, num2, op);
+
+    </script>
+
+</body>
+</html>
