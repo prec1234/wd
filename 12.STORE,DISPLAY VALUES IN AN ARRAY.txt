@@ -1,0 +1,18 @@
+<?php
+
+$students = array("Parth", "Rahul", "Amit", "Sneha");
+
+echo "<h2>Student Names</h2>";
+
+echo $students[0];
+echo "<br>";
+
+echo $students[1];
+echo "<br>";
+
+echo $students[2];
+echo "<br>";
+
+echo $students[3];
+
+?>
