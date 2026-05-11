@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>CSS Example</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+        h2
+        {
+            color: blue;
+            text-align: center;
+        }
+
+        table
+        {
+            border-collapse: collapse;
+            width: 50%;
+        }
+
+        th
+        {
+            background-color: lightgray;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1 style="color:red; text-align:center;">
+        Student Information
+    </h1>
+
+    <h2>Using Internal CSS</h2>
+
+    <table border="1" cellpadding="10">
+
+        <tr>
+            <th>Name</th>
+            <th>Course</th>
+        </tr>
+
+        <tr>
+            <td>Sai</td>
+            <td>Computer Engineering</td>
+        </tr>
+
+        <tr>
+            <td>Ram</td>
+            <td>IT Engineering</td>
+        </tr>
+
+    </table>
+
+    <p class="para">
+        This paragraph uses External CSS.
+    </p>
+
+</body>
+</html>
+
+
+
+make another file in same folder for below code
+
+.para
+{
+    color: green;
+    font-size: 20px;
+    font-weight: bold;
+}
