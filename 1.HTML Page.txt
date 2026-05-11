@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personal Details</title>
+</head>
+<body>
+
+    <h1><u>Personal Details</u></h1>
+
+    <p><b>Name :</b> Sai Patil</p>
+    <p><i>Course :</i> Computer Engineering</p>
+    <p><strong>College :</strong> PREC LONI</p>
+    <p><em>City :</em> AHMEDNAGAR</p>
+    <p><mark>Hobby :</mark> Bike Riding</p>
+    <p><small>Email :</small> saipatil@gmail.com</p>
+    <p>Mobile No : <big>9876543210</big></p>
+
+</body>
+</html>
