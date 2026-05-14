@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nested Table Web Page</title>
+</head>
+<body>
+
+    <h1>My Web Page</h1>
+
+    <img src="nature.jpg" alt="Nature Image" width="300" height="200">
+
+    <br><br>
+
+    <a href="https://www.google.com">Visit Google</a>
+
+    <br><br>
+
+    <table border="1" cellpadding="10">
+
+        <tr>
+            <th>Name</th>
+            <th>Details</th>
+        </tr>
+
+        <tr>
+            <td>Sai Patil</td>
+
+            <td>
+                <table border="1" cellpadding="5">
+
+                    <tr>
+                        <th>Course</th>
+                        <th>City</th>
+                    </tr>
+
+                    <tr>
+                        <td>Computer Engineering</td>
+                        <td>Ahmednagar</td>
+                    </tr>
+
+                </table>
+            </td>
+
+        </tr>
+
+    </table>
+
+</body>
+</html>
