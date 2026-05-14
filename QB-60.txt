@@ -1,0 +1,1017 @@
+Web Development Practical Programs (1–60)
+1. Student Resume
+<!DOCTYPE html>
+<html>
+<head>
+<title>Resume</title>
+</head>
+<body>
+<h1>Rahul Sharma</h1>
+<p>Email: student@gmail.com</p>
+<p>Phone: 9876543210</p>
+<h2>Education</h2>
+<ul>
+<li>B.Tech IT</li>
+<li>HSC</li>
+<li>SSC</li>
+</ul>
+<h2>Skills</h2>
+<ul>
+<li>HTML</li>
+<li>CSS</li>
+<li>JavaScript</li>
+</ul>
+</body>
+</html>
+2. Image Gallery and Timetable
+<!DOCTYPE html>
+<html>
+<head>
+<title>Gallery</title>
+</head>
+<body>
+<h1>Image Gallery</h1>
+<img src="img1.jpg" width="150">
+<img src="img2.jpg" width="150">
+<br><br>
+<a href="https://facebook.com">Facebook</a>
+<a href="https://instagram.com">Instagram</a>
+<table border="1">
+<tr>
+<th>Day</th>
+<th>Subject</th>
+</tr>
+1
+<tr>
+<td>Monday</td>
+<td>WD</td>
+</tr>
+</table>
+</body>
+</html>
+3. Feedback Form
+<!DOCTYPE html>
+<html>
+<head>
+<title>Feedback Form</title>
+</head>
+<body>
+<form>
+Username:<input type="text"><br><br>
+Phone:<input type="number"><br><br>
+Course:
+<select>
+<option>B.Tech</option>
+<option>BCA</option>
+</select><br><br>
+Comments:<br>
+<textarea></textarea><br><br>
+<input type="submit">
+</form>
+</body>
+</html>
+4. CSS Navigation Menu
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul{
+list-style:none;
+background:black;
+padding:10px;
+}
+li{
+display:inline;
+margin:20px;
+color:white;
+}
+button{
+2
+background:blue;
+color:white;
+padding:10px;
+}
+button:hover{
+background:red;
+}
+</style>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<ul>
+<li>Home</li>
+<li>About</li>
+<li>Contact</li>
+</ul>
+<button style="border-radius:10px">Click</button>
+</body>
+</html>
+5. Bootstrap College Homepage
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/
+bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+<div class="container-fluid">
+<a class="navbar-brand">College</a>
+</div>
+</nav>
+<div class="container mt-4">
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-body">
+<h3>Course</h3>
+<p>Web Development</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
+3
+6. Registration Form Validation
+<!DOCTYPE html>
+<html>
+<body>
+<form onsubmit="return validate()">
+Password:<input type="password" id="pass"><br><br>
+Mobile:<input type="text" id="mob"><br><br>
+<input type="submit">
+</form>
+<script>
+function validate(){
+var p=document.getElementById("pass").value;
+var m=document.getElementById("mob").value;
+if(p.length<6){
+alert("Password too short");
+return false;
+}
+if(m.length!=10){
+alert("Invalid mobile");
+return false;
+}
+}
+</script>
+</body>
+</html>
+7. Background Color Change
+<!DOCTYPE html>
+<html>
+<body>
+<h1 id="txt">Hello</h1>
+<button onclick="change()">Change</button>
+<script>
+function change(){
+document.body.style.background="yellow";
+document.getElementById("txt").innerHTML="Welcome";
+}
+</script>
+</body>
+</html>
+8. Mini Calculator
+<!DOCTYPE html>
+<html>
+4
+<body>
+<input type="number" id="a">
+<input type="number" id="b">
+<button onclick="calc('+')">+</button>
+<button onclick="calc('-')">-</button>
+<p id="ans"></p>
+<script>
+function calc(op){
+var a=parseInt(document.getElementById("a").value);
+var b=parseInt(document.getElementById("b").value);
+var r;
+if(op=='+') r=a+b;
+if(op=='-') r=a-b;
+document.getElementById("ans").innerHTML=r;
+}
+</script>
+</body>
+</html>
+9. PHP Employee Details
+<?php
+$name="Rahul";
+$dept="IT";
+echo "Employee Name: $name <br>";
+echo "Department: $dept <br>";
+echo $_SERVER['SERVER_NAME'];
+?>
+10. PHP Login POST
+<html>
+<body>
+<form method="post">
+Username:<input type="text" name="u"><br>
+Password:<input type="password" name="p"><br>
+<input type="submit">
+</form>
+<?php
+if($_POST){
+echo "Login Successful";
+}
+?>
+</body>
+</html>
+5
+11. PHP String Operations
+<?php
+$str="Web Development";
+echo strtoupper($str)."<br>";
+echo strtolower($str)."<br>";
+echo str_word_count($str);
+?>
+12. Student Marks Array
+<?php
+$marks=array("Maths"=>90,"Java"=>85,"WD"=>88);
+echo "<table border=1>";
+foreach($marks as $k=>$v){
+echo "<tr><td>$k</td><td>$v</td></tr>";
+}
+echo "</table>";
+?>
+13. Tourist Place
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Goa</h1>
+<img src="goa.jpg" width="300">
+<p>Goa is famous for beaches.</p>
+</body>
+</html>
+14. Nested List and Table
+<!DOCTYPE html>
+<html>
+<body>
+<ul>
+<li>Languages
+<ul>
+<li>HTML</li>
+<li>CSS</li>
+</ul>
+</li>
+</ul>
+<a href="https://w3schools.com">W3Schools</a>
+6
+<table border="1">
+<tr><th>Day</th><th>Class</th></tr>
+<tr><td>Mon</td><td>WD</td></tr>
+</table>
+</body>
+</html>
+15. Job Application Form
+<!DOCTYPE html>
+<html>
+<body>
+<form>
+Name:<input type="text"><br><br>
+Qualification:<input type="text"><br><br>
+Experience:<input type="text"><br><br>
+Skills:<textarea></textarea><br><br>
+<input type="submit">
+</form>
+</body>
+</html>
+16. Styled Form Using CSS
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+form{
+width:300px;
+padding:20px;
+background:lightgray;
+font-family:Arial;
+}
+button:hover{
+background:green;
+color:white;
+}
+</style>
+</head>
+<body>
+<form>
+Name:<input type="text"><br><br>
+<button>Submit</button>
+</form>
+</body>
+</html>
+7
+17. Bootstrap Portfolio
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/
+bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-dark bg-dark">
+<a class="navbar-brand text-white">Portfolio</a>
+</nav>
+<div class="container mt-4">
+<div class="progress">
+<div class="progress-bar" style="width:80%">HTML</div>
+</div>
+</div>
+</body>
+</html>
+18. Signup Form Validation
+<!DOCTYPE html>
+<html>
+<body>
+<form onsubmit="return check()">
+Password:<input type="password" id="p1"><br>
+Confirm Password:<input type="password" id="p2"><br>
+Age:<input type="number" id="age"><br>
+<input type="submit">
+</form>
+<script>
+function check(){
+var p1=document.getElementById("p1").value;
+var p2=document.getElementById("p2").value;
+var age=document.getElementById("age").value;
+if(p1!=p2){
+alert("Password mismatch");
+return false;
+}
+if(age<18){
+alert("Invalid age");
+return false;
+}
+}
+</script>
+</body>
+</html>
+8
+19. Add Remove List Items
+<!DOCTYPE html>
+<html>
+<body>
+<ul id="list"></ul>
+<button onclick="add()">Add</button>
+<button onclick="removeItem()">Remove</button>
+<script>
+function add(){
+var li=document.createElement("li");
+li.innerHTML="Item";
+document.getElementById("list").appendChild(li);
+}
+function removeItem(){
+var list=document.getElementById("list");
+list.removeChild(list.lastElementChild);
+}
+</script>
+</body>
+</html>
+20. Multiplication Table
+<!DOCTYPE html>
+<html>
+<body>
+<input type="number" id="num">
+<button onclick="table()">Show</button>
+<p id="ans"></p>
+<script>
+function table(){
+var n=document.getElementById("num").value;
+var t="";
+for(i=1;i<=10;i++){
+t+=n+" x "+i+" = "+(n*i)+"<br>";
+}
+document.getElementById("ans").innerHTML=t;
+}
+</script>
+</body>
+</html>
+21. Greeting Message
+<?php
+$h=date("H");
+9
+if($h<12)
+echo "Good Morning";
+else if($h<18)
+echo "Good Afternoon";
+else
+echo "Good Evening";
+?>
+22. Student Registration POST
+<html>
+<body>
+<form method="post">
+Name:<input type="text" name="n"><br>
+Course:<input type="text" name="c"><br>
+<input type="submit">
+</form>
+<?php
+if($_POST){
+echo $_POST['n'];
+echo "<br>";
+echo $_POST['c'];
+}
+?>
+</body>
+</html>
+23. PHP String Replace
+<?php
+$str=" Hello World ";
+echo str_replace("World","PHP",$str)."<br>";
+echo strpos($str,"World")."<br>";
+echo trim($str);
+?>
+24. Multidimensional Array
+<?php
+$customer=array(
+array("Rahul",22),
+array("Rahul",25)
+);
+foreach($customer as $c){
+echo $c[0]." ".$c[1]."<br>";
+10
+}
+?>
+25. Student Profile
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Student Profile</h1>
+<table border="1">
+<tr><td><img src="student.jpg" width="120"></td></tr>
+<tr><td>Name</td><td>Rahul</td></tr>
+<tr><td>Education</td><td>B.Tech</td></tr>
+<tr><td>Hobbies</td><td>Reading</td></tr>
+</table>
+</body>
+</html>
+26. Gallery and Nested Table
+<!DOCTYPE html>
+<html>
+<body>
+<img src="a.jpg" width="100">
+<img src="b.jpg" width="100">
+<br>
+<a href="https://amazon.in">Amazon</a>
+<table border="1">
+<tr><th>Day</th><th>Time</th></tr>
+<tr><td>Mon</td><td>10AM</td></tr>
+</table>
+</body>
+</html>
+27. Registration Form
+<!DOCTYPE html>
+<html>
+<body>
+<form>
+Name:<input type="text"><br><br>
+Email:<input type="email"><br><br>
+Password:<input type="password"><br><br>
+Gender:<input type="radio">Male
+<input type="radio">Female<br><br>
+City:
+11
+<select>
+<option>Mumbai</option>
+<option>Pune</option>
+</select><br><br>
+Hobbies:<input type="checkbox">Music
+<input type="checkbox">Sports<br><br>
+<input type="submit">
+<input type="reset">
+</form>
+</body>
+</html>
+28. CSS Styled Webpage
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+nav{
+background:black;
+padding:10px;
+}
+a{
+color:white;
+margin:20px;
+}
+table{
+border-collapse:collapse;
+}
+button:hover{
+background:orange;
+}
+</style>
+</head>
+<body>
+<nav>
+<a href="#">Home</a>
+<a href="#">About</a>
+</nav>
+<table border="1">
+<tr><td>WD</td></tr>
+</table>
+<button>Click</button>
+</body>
+</html>
+12
+29. Bootstrap Responsive Webpage
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/
+bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-dark bg-dark">
+<a class="navbar-brand text-white">Website</a>
+</nav>
+<div class="container mt-3">
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-body">Card 1</div>
+</div>
+</div>
+</div>
+</div>
+<footer class="bg-dark text-white text-center p-2">Footer</footer>
+</body>
+</html>
+30. Form Validation
+<!DOCTYPE html>
+<html>
+<body>
+<form onsubmit="return validate()">
+Email:<input type="text" id="email"><br>
+Password:<input type="password" id="pass"><br>
+<input type="submit">
+</form>
+<script>
+function validate(){
+var e=document.getElementById("email").value;
+var p=document.getElementById("pass").value;
+if(e==""||p==""){
+alert("Fields required");
+return false;
+}
+if(p.length<6){
+alert("Password too short");
+return false;
+}
+}
+</script>
+13
+</body>
+</html>
+31. Dynamic Image Change
+<!DOCTYPE html>
+<html>
+<body>
+<img id="img" src="a.jpg" width="200">
+<h1 id="txt">Hello</h1>
+<button onclick="change()">Change</button>
+<script>
+function change(){
+document.getElementById("img").src="b.jpg";
+document.getElementById("txt").innerHTML="Welcome";
+}
+</script>
+</body>
+</html>
+32. Calculator Switch Case
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+function calc(a,b,ch){
+switch(ch){
+case '+':document.write(a+b);break;
+case '-':document.write(a-b);break;
+case '*':document.write(a*b);break;
+case '/':document.write(a/b);break;
+}
+}
+calc(10,5,'+');
+</script>
+</body>
+</html>
+33. Welcome Message and Browser Info
+<?php
+echo "Welcome User<br>";
+echo date("d/m/Y h:i:s A")."<br>";
+14
+echo $_SERVER['HTTP_USER_AGENT'];
+?>
+34. Student Details Table
+<html>
+<body>
+<form method="post">
+Name:<input type="text" name="n"><br>
+Age:<input type="text" name="a"><br>
+<input type="submit">
+</form>
+<?php
+if($_POST){
+echo "<table border=1>";
+echo "<tr><td>".$_POST['n']."</td><td>".$_POST['a']."</td></tr>";
+echo "</table>";
+}
+?>
+</body>
+</html>
+35. String Operations
+<?php
+$str="Programming";
+echo strrev($str)."<br>";
+echo strtoupper($str)."<br>";
+echo strtolower($str)."<br>";
+echo substr($str,0,5);
+?>
+36. Marks and Average
+<?php
+$m=array(80,90,70);
+$total=array_sum($m);
+$avg=$total/count($m);
+echo "Total=".$total."<br>";
+echo "Average=".$avg;
+?>
+15
+37. Faculty Profile
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Faculty Profile</h1>
+<img src="faculty.jpg" width="150">
+<p>Professor of IT Department</p>
+<ul>
+<li>Java</li>
+<li>Web Development</li>
+</ul>
+</body>
+</html>
+38. Product Images and Price Table
+<!DOCTYPE html>
+<html>
+<body>
+<img src="mobile.jpg" width="100">
+<a href="https://flipkart.com">Flipkart</a>
+<table border="1">
+<tr><th>Product</th><th>Price</th></tr>
+<tr><td>Mobile</td><td>15000</td></tr>
+</table>
+</body>
+</html>
+39. Admission Form
+<!DOCTYPE html>
+<html>
+<body>
+<form>
+Name:<input type="text"><br>
+Email:<input type="email"><br>
+Gender:<input type="radio">Male
+<input type="radio">Female<br>
+Branch:
+<select>
+<option>IT</option>
+<option>CS</option>
+</select><br>
+<input type="checkbox">Music<br>
+<input type="submit">
+</form>
+16
+</body>
+</html>
+40. Styled Login Form
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+form{
+background:lightblue;
+padding:20px;
+}
+footer{
+background:black;
+color:white;
+text-align:center;
+}
+</style>
+</head>
+<body>
+<form>
+Username:<input type="text"><br><br>
+Password:<input type="password"><br><br>
+<input type="submit">
+</form>
+<footer>Footer Section</footer>
+</body>
+</html>
+41. Hospital Homepage
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/
+bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-dark bg-primary">
+<a class="navbar-brand text-white">Hospital</a>
+</nav>
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+<div class="carousel-inner">
+<div class="carousel-item active">
+<img src="h1.jpg" class="d-block w-100">
+</div>
+</div>
+17
+</div>
+<div class="container mt-3">
+<div class="card">
+<div class="card-body">Emergency Service</div>
+</div>
+</div>
+</body>
+</html>
+42. Login Validation
+<!DOCTYPE html>
+<html>
+<body>
+<form onsubmit="return check()">
+Email:<input type="text" id="e"><br>
+Password:<input type="password" id="p1"><br>
+Confirm Password:<input type="password" id="p2"><br>
+<input type="submit">
+</form>
+<script>
+function check(){
+var e=document.getElementById("e").value;
+var p1=document.getElementById("p1").value;
+var p2=document.getElementById("p2").value;
+if(e==""||p1=="") return false;
+if(p1!=p2){
+alert("Password mismatch");
+return false;
+}
+}
+</script>
+</body>
+</html>
+43. Dynamic Font and Image
+<!DOCTYPE html>
+<html>
+<body>
+<h1 id="t">Hello</h1>
+<img id="i" src="a.jpg" width="100">
+<button onclick="change()">Change</button>
+<script>
+function change(){
+document.getElementById("t").style.fontSize="40px";
+document.getElementById("t").style.color="red";
+document.getElementById("i").width=200;
+18
+}
+</script>
+</body>
+</html>
+44. Interest Calculator
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+function si(p,r,t){
+document.write((p*r*t)/100);
+}
+function ci(p,r,t){
+document.write(p*Math.pow((1+r/100),t)-p);
+}
+si(1000,5,2);
+</script>
+</body>
+</html>
+45. Student Info and Browser Details
+<?php
+echo "Student Name: Rahul<br>";
+echo "Course: IT<br>";
+echo $_SERVER['HTTP_USER_AGENT'];
+?>
+46. Feedback Form POST
+<html>
+<body>
+<form method="post">
+Name:<input type="text" name="n"><br>
+Feedback:<textarea name="f"></textarea><br>
+<input type="submit">
+</form>
+<?php
+if($_POST){
+echo $_POST['n']."<br>";
+echo $_POST['f'];
+}
+?>
+19
+</body>
+</html>
+47. Array Operations
+<?php
+$a=array(10,50,20,40);
+sort($a);
+print_r($a);
+echo "<br>Max=".max($a);
+?>
+48. Product Associative Array
+<?php
+$p=array("Mobile"=>15000,"Laptop"=>50000);
+echo "<table border=1>";
+foreach($p as $k=>$v){
+echo "<tr><td>$k</td><td>$v</td></tr>";
+}
+echo "</table>";
+?>
+49. Tourist Place Description
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Manali</h1>
+<p>Beautiful hill station.</p>
+<img src="manali.jpg" width="250">
+<ul>
+<li>Snow</li>
+<li>Mountains</li>
+</ul>
+</body>
+</html>
+50. Photo Gallery and Schedule
+<!DOCTYPE html>
+<html>
+<body>
+<img src="1.jpg" width="100">
+<img src="2.jpg" width="100"><br>
+20
+<a href="https://w3schools.com">W3Schools</a>
+<table border="1">
+<tr><th>Day</th><th>Subject</th></tr>
+<tr><td>Monday</td><td>WD</td></tr>
+</table>
+</body>
+</html>
+51. Job Application Form
+<!DOCTYPE html>
+<html>
+<body>
+<form>
+Name:<input type="text"><br>
+Email:<input type="email"><br>
+Mobile:<input type="number"><br>
+Qualification:<input type="text"><br>
+Experience:<input type="text"><br>
+<input type="submit">
+</form>
+</body>
+</html>
+52. Registration Form CSS
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+form{
+background:lightgreen;
+padding:20px;
+}
+.alert{
+color:red;
+font-weight:bold;
+}
+</style>
+</head>
+<body>
+<form>
+Name:<input type="text"><br><br>
+<input type="submit">
+</form>
+<p class="alert">Registration Open</p>
+21
+</body>
+</html>
+53. Restaurant Homepage
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/
+bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-dark bg-dark">
+<a class="navbar-brand text-white">Restaurant</a>
+</nav>
+<div class="container mt-3">
+<div class="card">
+<div class="card-body">Pizza</div>
+</div>
+</div>
+</body>
+</html>
+54. Feedback Validation
+<!DOCTYPE html>
+<html>
+<body>
+<form onsubmit="return validate()">
+Email:<input type="text" id="e"><br>
+Comment:<textarea id="c"></textarea><br>
+<input type="submit">
+</form>
+<script>
+function validate(){
+var e=document.getElementById("e").value;
+var c=document.getElementById("c").value;
+if(e==""||c==""){
+alert("Required");
+return false;
+}
+if(c.length<5){
+alert("Comment too short");
+return false;
+}
+}
+</script>
+22
+</body>
+</html>
+55. Dynamic Style Change
+<!DOCTYPE html>
+<html>
+<body>
+<h1 id="t">Welcome</h1>
+<img id="i" src="a.jpg" width="100">
+<button onclick="change()">Change</button>
+<script>
+function change(){
+document.body.style.background="pink";
+document.getElementById("t").style.fontStyle="italic";
+document.getElementById("i").width=200;
+}
+</script>
+</body>
+</html>
+56. Area Calculator
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+function circle(r){
+document.write(3.14*r*r);
+}
+function rectangle(l,b){
+document.write(l*b);
+}
+function triangle(b,h){
+document.write(0.5*b*h);
+}
+circle(5);
+</script>
+</body>
+</html>
+57. Customer Details and Date
+<?php
+echo "Customer Name: Amit<br>";
+23
+echo date("d/m/Y h:i:s A");
+?>
+58. Registration Success Message
+<html>
+<body>
+<form method="post">
+Name:<input type="text" name="n"><br>
+<input type="submit">
+</form>
+<?php
+if($_POST){
+echo "Registration Successful";
+}
+?>
+</body>
+</html>
+59. Numeric Operations
+<?php
+$n=121;
+$f=1;
+for($i=1;$i<=5;$i++){
+$f=$f*$i;
+}
+echo "Factorial=".$f."<br>";
+$rev=strrev($n);
+echo "Reverse=".$rev."<br>";
+if($n==$rev)
+echo "Palindrome";
+?>
+60. Book Names and Authors
+<?php
+$b=array("C"=>"Dennis","Java"=>"James");
+echo "<table border=1>";
+foreach($b as $k=>$v){
+echo "<tr><td>$k</td><td>$v</td></tr>";
+}
+echo "</table>";
+?>
+24
