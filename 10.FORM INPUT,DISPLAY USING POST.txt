@@ -1,43 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>POST Method Form</title>
+    <title>POST Method Example</title>
 </head>
 <body>
 
-    <h2>Student Form</h2>
+<h2>User Form</h2>
 
-    <form method="post">
-
-        Name :
-        <input type="text" name="name">
-        <br><br>
-
-        Email :
-        <input type="email" name="email">
-        <br><br>
-
-        <input type="submit" value="Submit">
-
-    </form>
-
-    <?php
-
-    if($_SERVER["REQUEST_METHOD"] == "POST")
-    {
-        $name = $_POST['name'];
-        $email = $_POST['email'];
-
-        echo "<h3>Entered Details</h3>";
-
-        echo "Name : " . $name;
-
-        echo "<br><br>";
-
-        echo "Email : " . $email;
-    }
-
-    ?>
+<form action="process.php" method="POST">
+    Name: <input type="text" name="name"><br><br>
+    Email: <input type="email" name="email"><br><br>
+    Age: <input type="number" name="age"><br><br>
+    
+    <input type="submit" value="Submit">
+</form>
 
 </body>
 </html>
+
+
+now create a php file in the same folder
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Collect values
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $age = $_POST['age'];
+
+    // Display values
+    echo "<h2>Form Data Received</h2>";
+    echo "Name: " . htmlspecialchars($name) . "<br>";
+    echo "Email: " . htmlspecialchars($email) . "<br>";
+    echo "Age: " . htmlspecialchars($age) . "<br>";
+}
+?>
